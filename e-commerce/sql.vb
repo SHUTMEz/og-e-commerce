@@ -10,4 +10,12 @@ Module sql
     Friend DR As SqlDataReader
     Friend sql As String = ""
 
+    Friend Sub Connect()
+        If cn.State = ConnectionState.Closed Then
+            MessageBox.Show("Connected")
+            cn.Open()
+        Else : MessageBox.Show("Can't Connect!")
+        End If
+    End Sub
+
 End Module
