@@ -22,6 +22,7 @@ Partial Class product
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(product))
         SuspendLayout()
         ' 
         ' product
@@ -29,9 +30,10 @@ Partial Class product
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(984, 561)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "product"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "product"
+        Text = "IT - Marketplace"
         ResumeLayout(False)
     End Sub
 End Class

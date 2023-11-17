@@ -99,6 +99,7 @@ Partial Class Home
         Margin = New Padding(3, 5, 3, 5)
         Name = "Home"
         StartPosition = FormStartPosition.CenterScreen
+        Text = "IT - Marketplace"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
