@@ -24,10 +24,10 @@ Partial Class login
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(login))
         logoImg = New PictureBox()
-        Email = New TextBox()
+        txtEmail = New TextBox()
         lblUsername = New Label()
         lblPassword = New Label()
-        Password = New TextBox()
+        txtPassword = New TextBox()
         btnLogin = New Button()
         Label1 = New Label()
         btnHome = New Button()
@@ -44,14 +44,14 @@ Partial Class login
         logoImg.TabIndex = 1
         logoImg.TabStop = False
         ' 
-        ' Email
+        ' txtEmail
         ' 
-        Email.Font = New Font("Mitr", 16F, FontStyle.Regular, GraphicsUnit.Point)
-        Email.Location = New Point(375, 214)
-        Email.Name = "Email"
-        Email.Size = New Size(250, 41)
-        Email.TabIndex = 2
-        Email.TextAlign = HorizontalAlignment.Center
+        txtEmail.Font = New Font("Mitr", 16F, FontStyle.Regular, GraphicsUnit.Point)
+        txtEmail.Location = New Point(375, 214)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(250, 41)
+        txtEmail.TabIndex = 2
+        txtEmail.TextAlign = HorizontalAlignment.Center
         ' 
         ' lblUsername
         ' 
@@ -73,14 +73,14 @@ Partial Class login
         lblPassword.TabIndex = 5
         lblPassword.Text = "Password"
         ' 
-        ' Password
+        ' txtPassword
         ' 
-        Password.Font = New Font("Mitr", 16F, FontStyle.Regular, GraphicsUnit.Point)
-        Password.Location = New Point(375, 305)
-        Password.Name = "Password"
-        Password.Size = New Size(250, 41)
-        Password.TabIndex = 4
-        Password.TextAlign = HorizontalAlignment.Center
+        txtPassword.Font = New Font("Mitr", 16F, FontStyle.Regular, GraphicsUnit.Point)
+        txtPassword.Location = New Point(375, 305)
+        txtPassword.Name = "txtPassword"
+        txtPassword.Size = New Size(250, 41)
+        txtPassword.TabIndex = 4
+        txtPassword.TextAlign = HorizontalAlignment.Center
         ' 
         ' btnLogin
         ' 
@@ -129,9 +129,9 @@ Partial Class login
         Controls.Add(Label1)
         Controls.Add(btnLogin)
         Controls.Add(lblPassword)
-        Controls.Add(Password)
+        Controls.Add(txtPassword)
         Controls.Add(lblUsername)
-        Controls.Add(Email)
+        Controls.Add(txtEmail)
         Controls.Add(logoImg)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "login"
@@ -143,10 +143,10 @@ Partial Class login
     End Sub
 
     Friend WithEvents logoImg As PictureBox
-    Friend WithEvents Email As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents lblUsername As Label
     Friend WithEvents lblPassword As Label
-    Friend WithEvents Password As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents btnHome As Button

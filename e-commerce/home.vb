@@ -12,7 +12,6 @@ Public Class Home
     End Sub
 
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Connect()
     End Sub
 
 
